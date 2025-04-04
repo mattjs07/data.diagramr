@@ -1,0 +1,48 @@
+---
+title: "comment-utiliser-mon-package"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{comment-utiliser-mon-package}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+# devtools::install('data.diagramr')
+library(data.diagramr)
+```
+
+
+Create a box object
+```{r}
+create_box('Data input A')
+```
+Prints a box 
+```{r}
+create_box('Data input A', print = T)
+```
+
+Prints an horizontal diagram
+```{r}
+create_data_diagram(
+  inputs = c("Input A", "Input B"), 
+  outputs = c("Output A", "Output B"), 
+  shape = "horizontal")
+
+```
+Prints an vertical diagram
+```{r}
+create_data_diagram(
+  inputs = "Input A", 
+  outputs = c("Output A", "Output B"), 
+  shape = "vertical")
+
+```
+

@@ -1,0 +1,15 @@
+Package: data.diagramr
+Title: Creates input to output data diagrams
+Version: 0.0.0.9000
+Authors@R: 
+    person("Mattis", "Gilbert", , "mattis.gilbert@sciencespo.fr", role = c("aut", "cre"))
+Description: This package contains function to easily create unicode diagrams of input to output data, to be easily copy/pasted at the beginning of scripts.
+License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
+    license
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
